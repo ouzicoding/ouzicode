@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .login-container {
   min-height: 100%;
   width: 100%;
