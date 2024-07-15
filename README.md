@@ -1,2 +1,3 @@
 # ouzicode
-个人博客
+- Laravel 10
+- Element Plus
