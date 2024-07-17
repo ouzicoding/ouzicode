@@ -10,6 +10,7 @@
         "axios": "^1.6.4",
         "fast-glob": "^3.3.2",
         "laravel-vite-plugin": "^1.0.0",
+        "normalize.css": "^8.0.1",
         "vite": "^5.0.0",
         "vite-plugin-svg-icons": "^2.0.1",
         "vue": "^3.4.32"
