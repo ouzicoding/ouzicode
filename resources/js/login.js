@@ -1,4 +1,5 @@
-import { validUsername } from './validate'
+import { validUsername } from '../utils/validate'
+import SvgIcon from '../components/SvgIcon/index.vue'
 
 const App = {
     name: 'Login',
@@ -64,4 +65,11 @@ const App = {
 }
 const app = Vue.createApp(App);
 app.use(ElementPlus);
+// 注册组件
+app.component(
+    // 注册的名字
+    'svg-icon',
+    // 组件的实现
+    SvgIcon
+)
 app.mount("#app");

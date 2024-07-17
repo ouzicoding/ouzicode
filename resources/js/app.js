@@ -1,4 +1,5 @@
-import './bootstrap';
-import './login';
-import '../scss/app.css'
+import './bootstrap'
+import '../styles/index.css'
+import './login'
+import '../scss/login.css'
 import '../scss/font.css'
