@@ -6,14 +6,32 @@
         "build": "vite build"
     },
     "devDependencies": {
+        "@intlify/unplugin-vue-i18n": "^4.0.0",
         "@vitejs/plugin-vue": "^5.0.5",
+        "@vitejs/plugin-vue-jsx": "^4.0.0",
         "axios": "^1.6.4",
         "fast-glob": "^3.3.2",
         "laravel-vite-plugin": "^1.0.0",
-        "normalize.css": "^8.0.1",
+        "mockjs": "^1.1.0",
+        "rollup-plugin-visualizer": "^5.12.0",
+        "unocss": "^0.60.4",
         "vite": "^5.0.0",
+        "vite-plugin-ejs": "^1.7.0",
+        "vite-plugin-eslint": "^1.8.1",
+        "vite-plugin-mock": "2.9.6",
+        "vite-plugin-progress": "^0.0.7",
+        "vite-plugin-purge-icons": "^0.10.0",
+        "vite-plugin-style-import": "2.0.0",
         "vite-plugin-svg-icons": "^2.0.1",
-        "vue": "^3.4.32"
+        "vite-plugin-url-copy": "^1.1.4",
+        "vue": "^3.4.32",
+        "vue-i18n": "^9.13.1"
     },
-    "dependencies": {}
+    "dependencies": {
+        "eslint": "^9.7.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-define-config": "^2.1.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "eslint-plugin-vue": "^9.27.0"
+    }
 }
