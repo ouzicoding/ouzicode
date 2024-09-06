@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\AdministratorController;
+use App\Http\Controllers\Dashboard\AdministratorController;
+use App\Http\Controllers\Dashboard\IndexController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,7 +21,7 @@ Route::get('/', function () {
 
 //apiResource 是什么
 Route::prefix('dashboard')->group(function (){
-    Route::get('/',[AdministratorController::class,'show']);
+    Route::get('/',[IndexController::class,'index']);
 
 
 });

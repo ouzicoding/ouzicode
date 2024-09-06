@@ -1,14 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Dashboard;
 
-
+use App\Http\Controllers\Controller;
 use App\Models\Administrator;
+use Illuminate\Http\Request;
 
-class AdministratorController extends Controller
+class IndexController extends Controller
 {
     //
-    public function show()
+    public function index()
     {
         return view('dashboard',[
             'users'=>Administrator::all(),
