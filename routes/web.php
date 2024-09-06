@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdministratorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+//apiResource 是什么
+Route::prefix('dashboard')->group(function (){
+    Route::get('/',[AdministratorController::class,'show']);
+
+
 });
