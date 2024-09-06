@@ -70,11 +70,11 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'PRC',
 
     /*
     |--------------------------------------------------------------------------
-    | Application Locale Configuration
+    | Application Locale Configuration 本地化语言
     |--------------------------------------------------------------------------
     |
     | The application locale determines the default locale that will be used
@@ -83,11 +83,11 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'zh-cn',
 
     /*
     |--------------------------------------------------------------------------
-    | Application Fallback Locale
+    | Application Fallback Locale  备用语言
     |--------------------------------------------------------------------------
     |
     | The fallback locale determines the locale to use when the current one
@@ -100,7 +100,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Faker Locale
+    | Faker Locale  种子语言
     |--------------------------------------------------------------------------
     |
     | This locale will be used by the Faker PHP library when generating fake
@@ -109,7 +109,7 @@ return [
     |
     */
 
-    'faker_locale' => 'en',
+    'faker_locale' => 'zh-cn',
 
     /*
     |--------------------------------------------------------------------------
