@@ -22,5 +22,7 @@ Route::prefix('dashboard')->group(function (){
     Route::get('/',[IndexController::class,'index']);
     Route::get('/article',[ArticleController::class,'index']);
 
-
 });
+
+Route::get('/article',[\App\Http\Controllers\Api\IndexController::class,'index']);
+Route::get('/article/{id}',[\App\Http\Controllers\Api\IndexController::class,'detail']);
