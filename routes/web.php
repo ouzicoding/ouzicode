@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Dashboard\AdministratorController;
+use App\Http\Controllers\Dashboard\ArticleController;
 use App\Http\Controllers\Dashboard\IndexController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,13 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Controllers\Home\IndexController::class,'index']);
 
 //apiResource 是什么
 Route::prefix('dashboard')->group(function (){
     Route::get('/',[IndexController::class,'index']);
+    Route::get('/article',[ArticleController::class,'index']);
 
 
 });

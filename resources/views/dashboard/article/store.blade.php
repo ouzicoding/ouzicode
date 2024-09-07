@@ -1,0 +1,1 @@
+dashboard.article.store
