@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Controllers\Dashboard\ArticleController;
-use App\Http\Controllers\Dashboard\IndexController;
+use App\Http\Controllers\Home\IndexController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,14 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\Home\IndexController::class,'index']);
+Route::get('/', [IndexController::class,'index']);
 
-//apiResource 是什么
-Route::prefix('dashboard')->group(function (){
-    Route::get('/',[IndexController::class,'index']);
-    Route::get('/article',[ArticleController::class,'index']);
 
-});
+//后台路由
+Route::prefix('dashboard')->group(base_path('routes/admin.php'));
 
-Route::get('/article',[\App\Http\Controllers\Api\IndexController::class,'index']);
-Route::get('/article/{id}',[\App\Http\Controllers\Api\IndexController::class,'detail']);
+
