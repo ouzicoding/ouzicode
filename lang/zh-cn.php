@@ -1,4 +1,5 @@
 <?php
+
 return [
     'common'=>[
         'login'=>'登录',

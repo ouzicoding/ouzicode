@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
 //        使用 call 方法来执行其他的seeder
         $this->call([
             AdministratorSeeder::class,
+            ArticleSeeder::class,
         ]);
     }
 }
