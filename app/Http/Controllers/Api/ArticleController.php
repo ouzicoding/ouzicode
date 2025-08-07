@@ -7,6 +7,11 @@ use App\Http\Resources\ArticleCollection;
 use App\Http\Resources\ArticleResource;
 use App\Models\Article;
 
+/**
+ * Class ArticleController
+ * @package App\Http\Controllers\Api
+ * @make php artisan make:controller Api\ArticleController
+ */
 class ArticleController extends Controller
 {
 

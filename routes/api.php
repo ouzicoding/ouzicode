@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\ArticleController;
 use App\Http\Controllers\Api\IndexController;
+use App\Http\Controllers\Api\WeChatController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,3 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/',[IndexController::class,'index']);
 Route::get('/article',[ArticleController::class,'index']);
 Route::get('/article/{id}',[ArticleController::class,'detail']);
+Route::post('/send-wechat',[WeChatController::class,'send']);
